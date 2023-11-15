@@ -1,5 +1,6 @@
 from decimal import Decimal
 
+
 def cm_to_inch(cm, round_result: bool = False):
     if round_result:
         result = cm / 2.54
