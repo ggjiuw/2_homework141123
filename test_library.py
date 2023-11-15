@@ -1,5 +1,6 @@
 from library import cm_to_inch
 
+
 def test_float_cm_to_inch():
     cm = 5.2
     expected_result = 2.047244094488189
