@@ -1,7 +1,7 @@
 from decimal import Decimal
 
 
-def cm_to_inch(cm, round_result: bool = False):
+def cm_to_inch(cm, round_result: bool = False) -> int | float:
     if round_result:
         result = cm / 2.54
         result = Decimal(result).quantize(Decimal('0.01'))
