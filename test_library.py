@@ -48,3 +48,17 @@ def test_round_int_cm_to_inch():
     expected_result = 9.84
     actual_result = cm_to_inch(cm, True)
     assert expected_result == actual_result
+
+
+def test_null_cm_to_inch():
+    cm = 0
+    expected_result = 0
+    actual_result = cm_to_inch(cm)
+    assert expected_result == actual_result
+
+
+def test_round_null_cm_to_inch():
+    cm = 0
+    expected_result = 0.0
+    actual_result = cm_to_inch(cm, True)
+    assert expected_result == actual_result
